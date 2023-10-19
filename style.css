@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("./Images/BackgroundImage.png");
+}
+header{
+    margin:0;
+    display:flex;
+    padding-top: 10px;
+    background-color: white;
+    box-shadow: -2px -2px 5px black;
+}
+header section{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+}
+header section h3{
+    padding-top:8px;
+}
+header section h3 a{
+    font-size: 23px;
+    color:black;
+    text-decoration: none;
+}
+header section img{
+    height: 35px;
+    width: 35px;
+    padding: 15px;
+    padding-right: 7px;
+    padding-top: 0px;
+}
+header nav{
+    padding-left: 400px;
+}
+nav li{
+    display: inline-block;
+    padding: 10px;
+    padding-left: 20px;
+}
+nav li a{
+    color:black;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+#contents{
+    padding-right: 250px;
+}
+#profilePhoto{
+    padding-right: 100px;
+}
+#contents h1{
+    font-family:Segoe UI;
+    font-size: 55px;
+}
+#contents h1 span{
+    color:rgb(249, 133, 0);
+    font-family: cursive;
+}
+#contents h3{
+    padding-top:30px;
+    font-size:30px;
+    font-family: 'Times New Roman';
+}
+#aboutMeBtn{
+    margin-top: 30px;
+    padding:15px 25px 15px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    border-width: 0px;
+    border-radius: 25px;
+    background-image: linear-gradient(rgb(5, 5, 98),rgb(5, 5, 130));
+    box-shadow: -1px 5px 10px rgb(137, 137, 139);
+}
+#profilePhoto img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    filter: drop-shadow(3px 7px 10px gray);
+}
+#socialMediaIcons a{
+    padding-right:15px;
+}
+#socialMediaIcons img{
+    height: 40px;
+    width: 40px;
+}
+.active{
+    color:blue;
+    text-decoration: underline;
+    font-weight: bolder;
+}

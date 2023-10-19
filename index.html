@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
         <section>
-            <img src="./Images/AP_logo.jpg" alt="Logo" width="30"/>
-            <h3> ARUP </h3>
+            <a href="index.html"><img src="./Images/AP_logo.jpg" alt="Logo" width="30"/></a>
+            <h3><a href="index.html"> ARUP </a></h3>
         </section>
         <nav>
             <ul>
-                <li> <a href="#">Home</a> </li>
+                <li> <a href="index.html" class="active">Home</a> </li>
                 <li> <a href="#">About</a> </li>
                 <li> <a href="#">Skills</a> </li>
                 <li> <a href="#">Education</a> </li>
@@ -23,22 +25,22 @@
             </ul>
         </nav>
     </header>
-    <hr>
-    <section>
-        <div>
-            <h1> Hi There, <br> I'm ARUP PAUL</h1>
-            <h3> Welcome to My Portfolio ! </h3>
-            <button type="button"> About Me &#x2193; </button> 
+    
+    <section id="container">
+        <div id="contents">
+            <h1> Hi There, <br> I'm <span>ARUP PAUL</span></h1>
+            <h3> Welcome to My Portfolio! </h3>
+            <button type="button" id="aboutMeBtn"> About Me <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> </button> 
             <br> <br> <br>
-            <div>
-                <a href="#"> <img src="./Images/LinkedIn_logo.png" alt="LinkedIn Logo" width="50"></a>
-                <a href="#"> <img src="./Images/GitHub_logo.png" alt="Github Logo" width="50"></a>
+            <div id="socialMediaIcons">
+                <a href="https://www.linkedin.com/in/arup-paul-963810194/"> <img src="./Images/LinkedIn_logo.png" alt="LinkedIn Logo" width="50"></a>
+                <a href="https://github.com/Arup-Paul8509"> <img src="./Images/GitHub_logo.png" alt="Github Logo" width="50"></a>
                 <a href="#"> <img src="./Images/Twitter_logo.png" alt="Twitter Logo" width="50"></a>
-                <a href="#"> <img src="./Images/Insta_logo.webp" alt="Instagram Logo" width="50"></a>
-                <a href="#"> <img src="./Images/Facebook_logo.webp" alt="Facebook Logo" width="50"></a>
+                <a href="https://instagram.com/arup003?igshid=MzMyNGUyNmU2YQ=="> <img src="./Images/Insta_logo.webp" alt="Instagram Logo" width="50"></a>
+                <a href="https://www.facebook.com/profile.php?id=100009466887771"> <img src="./Images/Facebook_logo.webp" alt="Facebook Logo" width="50"></a>
             </div>
         </div>
-        <div>   <img src="./Images/profile_photo.jpg" alt="Profile Picture" width="250"></div>
+        <div id="profilePhoto">   <img src="./Images/profilePhoto.png" alt="Profile Picture" width="250"></div>
     </section>
     
 </body>
