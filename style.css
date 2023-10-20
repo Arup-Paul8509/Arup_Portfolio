@@ -39,7 +39,7 @@ header nav{
 nav li{
     display: inline-block;
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 nav li a{
     color:black;
@@ -47,6 +47,15 @@ nav li a{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 20px;
+    transition: transform .2s;
+    padding: 10px;
+}
+nav li a:hover{
+    border-radius:25px;
+    background-color: rgb(251, 252, 181);
+}
+nav li a:active{
+    text-shadow: 0.5px 0.5px black;
 }
 #container{
     display: flex;
@@ -66,6 +75,10 @@ nav li a{
 #contents h1 span{
     color:rgb(249, 133, 0);
     font-family: serif;
+    cursor: pointer;
+}
+#contents h1 span:hover{
+    color:rgb(249, 54, 0);
 }
 #contents h3{
     padding-top:30px;
@@ -83,12 +96,24 @@ nav li a{
     border-radius: 25px;
     background-image: linear-gradient(rgb(5, 5, 98),rgb(5, 5, 130));
     box-shadow: -1px 5px 10px rgb(137, 137, 139);
+    cursor: pointer;
+}
+#aboutMeBtn:hover{
+    opacity: 80%;
+}
+#aboutMeBtn:active{
+    transform: translateY(2px);
+    box-shadow: -1px 5px 5px rgb(137, 137, 139);
 }
 #profilePhoto img{
     height: 400px;
     width: 400px;
     border-radius: 50%;
     filter: drop-shadow(3px 7px 10px gray);
+    transition: transform .5s;
+}
+#profilePhoto img:hover{
+    transform:scale(1.1);
 }
 #socialMediaIcons a{
     padding-right:15px;
@@ -96,6 +121,13 @@ nav li a{
 #socialMediaIcons img{
     height: 40px;
     width: 40px;
+    transition: transform .2s;
+}
+#socialMediaIcons img:hover{
+    transform: scale(1.1);
+}
+#socialMediaIcons img:active{
+    transform: translateY(1px);
 }
 .active{
     color:blue;
